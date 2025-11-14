@@ -13,9 +13,7 @@ class Solution:
             if players[p] <= trainers[t]:
                 counter+=1
                 p+=1
-                t+=1
-            else:
-                t+=1
+            t+=1
 
         return counter
 
