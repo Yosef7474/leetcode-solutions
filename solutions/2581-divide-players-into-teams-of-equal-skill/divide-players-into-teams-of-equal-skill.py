@@ -1,20 +1,18 @@
 class Solution:
     def dividePlayers(self, skill: List[int]) -> int:
-        n = len(skill)
         skill.sort()
-        
-        target_sum = skill[0] + skill[-1]
+        left, right = 0, len(skill) - 1
+        target_sum = skill[left] + skill[right]
         total_chemistry = 0
         
-        for i in range(n // 2):
-            left = skill[i]
-            right = skill[n - 1 - i]
+        while left < right:
+            current_sum = skill[left] + skill[right]
             
-            # Check if this pair has the required sum
-            if left + right != target_sum:
+            if current_sum != target_sum:
                 return -1
             
-            # Add the chemistry (product)
-            total_chemistry += left * right
+            total_chemistry += skill[left] * skill[right]
+            left += 1
+            right -= 1
         
         return total_chemistry
