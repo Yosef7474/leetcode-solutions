@@ -11,9 +11,9 @@ class Solution:
         current = head
         
         while current:
-            next_node = current.next
+            nxt = current.next
             current.next = prev
             prev = current
-            current = next_node
+            current = nxt 
         
         return prev
