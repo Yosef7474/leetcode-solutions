@@ -1,4 +1,4 @@
-<h3><a href=https://leetcode.com/problems/minimum-index-sum-of-two-lists/>Minimum Index Sum of Two Lists</a></h3>
+<h3><a href=https://leetcode.com/problems/minimum-index-sum-of-two-lists/description/>Minimum Index Sum of Two Lists</a></h3>
 <p><p>Given two arrays of strings <code>list1</code> and <code>list2</code>, find the <strong>common strings with the least index sum</strong>.</p>
 
 <p>A <strong>common string</strong> is a string that appeared in both <code>list1</code> and <code>list2</code>.</p>
